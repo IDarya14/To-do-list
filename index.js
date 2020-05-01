@@ -12,9 +12,12 @@ let newTask = function(id) {
         todo.append(div);
         div.setAttribute('data-id', id);
         
+        let onCheck = () => {
+            chkbox(checkboxElem, div, deleteButton);
+        }
         const checkboxElem = document.createElement('input');
         checkboxElem.setAttribute('type', 'checkbox');
-        checkboxElem.addEventListener('click', chkbox);
+        checkboxElem.addEventListener('click', onCheck);
         checkboxElem.checked = elem.checked;
         div.append(checkboxElem);
         
@@ -27,6 +30,7 @@ let newTask = function(id) {
         deleteButton.innerHTML='x';
         deleteButton.addEventListener('click', deleteTask);
         div.append(deleteButton);
+        
     })
 };
 
@@ -45,6 +49,7 @@ let chkbox = (checkboxElem, div, deleteButton) => {
         div.classList.add('chbtrue');
         deleteButton.classList.add('deleteButton1');
     }else{
+        console.log(div);
         div.classList.remove('chbtrue');
         div.classList.add('list');
         deleteButton.classList.remove('deleteButton1');
