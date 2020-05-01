@@ -4,7 +4,7 @@ let todo = document.querySelector('.todo');
 
 let taskList = [];
 
-let newTask = function() { 
+let newTask = function(id) { 
     
     taskList.map(elem=>{
         let div = document.createElement('div');
