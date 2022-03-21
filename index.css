@@ -1,68 +1,72 @@
-.page{
-    display: flex;
-    justify-content: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-    
+.page {
+  display: flex;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
 }
-.block{
-    background-color: wheat;
-    width: 700px;
-    height: 400px;
-    text-align: center;
+.block {
+  margin: 30px 0;
+  background-color: wheat;
+  width: 700px;
+  text-align: center;
 }
-h1{
-    margin-bottom: 10px;
+h1 {
+  margin-bottom: 10px;
 }
-.business{
-    width: 400px;
-    height: 30px;
-    margin-left: 50px;
-    border: 2px solid burlywood;
-    padding-left: 15px;
+.input {
+  margin: 0 auto 30px auto;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
 }
-.but{
-    width: 90px;
-    height: 36px;
-    margin-left: 30px;
-    border: 2px solid burlywood;
-    font-size: 16px;
-    background-color: burlywood;
-    border-radius: 5px;
+.business {
+  width: 70%;
+  height: 30px;
+  border: 2px solid burlywood;
+  padding-left: 15px;
 }
-.list{
-    background-color: burlywood;
-    margin-top: 10px;
-    margin-left: 103px;
-    width: 530px;
-    height: 30px;
-    text-align: left;
-    padding-left: 20px;
+.but {
+  width: 20%;
+  height: 36px;
+  border: 2px solid burlywood;
+  font-size: 16px;
+  background-color: burlywood;
+  border-radius: 5px;
 }
-.chbtrue{
-    background-color: rgb(219, 140, 36);
-    margin-top: 10px;
-    margin-left: 103px;
-    width: 530px;
-    height: 30px;
-    text-align: left;
-    padding-left: 20px;
+.list {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: burlywood;
+  width: 600px;
+  margin: 20px auto 20px auto;
 }
-.deleteButton{
-    background-color: burlywood;
-    border: none;
-    margin-left: 400px;
-    margin-top: 5px;
-    width: 20px;
-    height: 20px;
-    padding: 0px;
+.item {
+  display: flex;
+  align-items: center;
 }
-.deleteButton1{
-    background-color: rgb(219, 140, 36);
-    border: none;
-    margin-left: 400px;
-    margin-top: 5px;
-    width: 20px;
-    height: 20px;
-    padding: 0px;
+.text {
+  margin-left: 30px;
+  width: 300px;
+  text-align: left;
+}
+
+.chbtrue {
+  background-color: rgb(219, 140, 36);
+}
+
+.deleteButton {
+  background-color: burlywood;
+  border: none;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+}
+.deleteButton1 {
+  background-color: rgb(219, 140, 36);
+  border: none;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
 }
